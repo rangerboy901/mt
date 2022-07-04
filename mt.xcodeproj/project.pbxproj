@@ -14,6 +14,8 @@
 		BCD8828F28732B3A00863BB7 /* mtTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD8828E28732B3A00863BB7 /* mtTests.swift */; };
 		BCD8829928732B3A00863BB7 /* mtUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD8829828732B3A00863BB7 /* mtUITests.swift */; };
 		BCD8829B28732B3A00863BB7 /* mtUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD8829A28732B3A00863BB7 /* mtUITestsLaunchTests.swift */; };
+		BCD882A928733ACC00863BB7 /* mt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BCD882A728733ACC00863BB7 /* mt.xcdatamodeld */; };
+		BCD882AB28733AE500863BB7 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCD882AA28733AE500863BB7 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		BCD8829428732B3A00863BB7 /* mtUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mtUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCD8829828732B3A00863BB7 /* mtUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mtUITests.swift; sourceTree = "<group>"; };
 		BCD8829A28732B3A00863BB7 /* mtUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mtUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BCD882A828733ACC00863BB7 /* mt.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = mt.xcdatamodel; sourceTree = "<group>"; };
+		BCD882AA28733AE500863BB7 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +98,14 @@
 		BCD8827C28732B3700863BB7 /* mt */ = {
 			isa = PBXGroup;
 			children = (
+				BCD882AD28733B0700863BB7 /* Models */,
 				BCD8827D28732B3700863BB7 /* mtApp.swift */,
-				BCD8827F28732B3700863BB7 /* ContentView.swift */,
+				BCD882AC28733AFB00863BB7 /* Views */,
+				BCD882AF28733B2800863BB7 /* ViewModel */,
 				BCD8828128732B3900863BB7 /* Assets.xcassets */,
 				BCD8828328732B3900863BB7 /* Preview Content */,
+				BCD882A728733ACC00863BB7 /* mt.xcdatamodeld */,
+				BCD882AA28733AE500863BB7 /* Launch Screen.storyboard */,
 			);
 			path = mt;
 			sourceTree = "<group>";
@@ -125,6 +133,36 @@
 				BCD8829A28732B3A00863BB7 /* mtUITestsLaunchTests.swift */,
 			);
 			path = mtUITests;
+			sourceTree = "<group>";
+		};
+		BCD882AC28733AFB00863BB7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BCD8827F28732B3700863BB7 /* ContentView.swift */,
+				BCD882AE28733B1800863BB7 /* Screens */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BCD882AD28733B0700863BB7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BCD882AE28733B1800863BB7 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		BCD882AF28733B2800863BB7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +269,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCD882AB28733AE500863BB7 /* Launch Screen.storyboard in Resources */,
 				BCD8828528732B3900863BB7 /* Preview Assets.xcassets in Resources */,
 				BCD8828228732B3900863BB7 /* Assets.xcassets in Resources */,
 			);
@@ -259,6 +298,7 @@
 			files = (
 				BCD8828028732B3700863BB7 /* ContentView.swift in Sources */,
 				BCD8827E28732B3700863BB7 /* mtApp.swift in Sources */,
+				BCD882A928733ACC00863BB7 /* mt.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,6 +623,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BCD882A728733ACC00863BB7 /* mt.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BCD882A828733ACC00863BB7 /* mt.xcdatamodel */,
+			);
+			currentVersion = BCD882A828733ACC00863BB7 /* mt.xcdatamodel */;
+			path = mt.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = BCD8827228732B3700863BB7 /* Project object */;
 }
